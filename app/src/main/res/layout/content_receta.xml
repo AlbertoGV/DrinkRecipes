@@ -5,16 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".RecetaActivity"
+    app:layout_scrollFlags="scroll"
     tools:showIn="@layout/activity_receta"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:theme="@style/ToolbarTheme"
-        android:id="@+id/toolbar2">
 
-    </android.support.v7.widget.Toolbar>
 <android.support.v4.widget.NestedScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -22,7 +18,7 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:isScrollContainer="true"
+
     android:orientation="vertical">
 
 
@@ -298,8 +294,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="8dp">
+        android:layout_height="match_parent">
         <TextView
             android:id="@+id/ingredient6"
             android:textColor="#000"
